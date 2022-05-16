@@ -1,0 +1,114 @@
+@charset 'utf-8';
+/* CSS Document */
+
+/* reset (pc) */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; width: 100%;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.mobile {display: none !important;}
+.hidden {position: absolute; left: -9999px;}
+br.only-m {content: '';}
+br.only-m:after {content: '\00a0';}
+
+
+
+/* common */
+.blind{display: none;}
+img{width:100%;}
+.clearfix::before,.clearfix::after{display: block; clear: both; content:"";}
+.container{max-width:1200px; margin:0 auto;}
+
+
+/* daylife */
+#daylife .text{display: inline-block; width:50%; min-height:100vh; box-sizing: border-box; padding-top:calc(50vh - 97px); padding-left:100px;
+margin-top: -100px;}
+#daylife .text .logo{background: url("../img/logo.png") no-repeat center/contain; width:300px; height:90px;}
+#daylife .text p{padding-top:50px;}
+#daylife .visual{position: absolute; top:0; right:0; width:50%; min-height:100vh; height:100%; background: url("../img/visual01.jpg") no-repeat center/contain; 
+  box-sizing: border-box; background-attachment: fixed; background-position: 50vw top;}
+
+
+/* story   */
+#story{background: url("../img/parallax_bg.jpg") no-repeat center/cover; height:750px; background-attachment: fixed; color:white; position: relative;}
+#story h2{ font-size: 52px; }
+#story .content{position: absolute; top:50%; left:0; transform: translate(0,-50%); width:100%; text-align: center;}
+#story p{margin-top:20px}
+#story button{width:180px; height:45px; background: transparent; color:white; margin-top:50px; border:2px solid white; cursor: pointer;}
+
+
+/* moment */
+#moment {padding:120px 0; min-width: 1200px;}
+#moment h2{font-size: 40px; width:100%; text-align: center; padding-bottom:35px}
+#moment .box{position: relative; height:715px; background-color: #76887F; color:white; overflow: hidden;}
+#moment .box_left{float:left;}
+#moment .box_center{float:left; width:228px; height:714px; position: relative; }
+#moment .box_center div{position: absolute; left:0; bottom:0}
+#moment .box_center p a{position: absolute; display: block; height: calc(100% - 228px); padding: 160px 24px 0; box-sizing: border-box;}
+#moment .box_right{float:left; width:384px; height:714px; box-sizing: border-box;}
+#moment .box_right .cut div{float:left}
+#moment .box_right p{padding:40px 60px 0; box-sizing: border-box;}
+
+
+/* skincare */
+#skincare{position: relative; min-height: 100vh; margin: auto; max-width: 1920px; min-width: 1200px;}
+#skincare .visual{background: url("../img/visual03.jpg") no-repeat left/contain; background-attachment: fixed; position: absolute; top:0; left:0;
+width:50%; min-height:100vh; height:100%; }
+#skincare .type-right{background: url("../img/figure04.jpg") no-repeat;}
+#skincare .products{margin-left:58px; width:588px; padding-top:60px; }
+#skincare .type-left{background: url("../img/figure03.jpg") no-repeat; background-position: right 0;}
+.skin > a{display:inline-block; width:180px; height:180px;}
+#skincare .content{width:486px; padding: calc(50% + 200px) 0; margin:0 auto}
+#skincare .content h2{font-size: 40px; margin-bottom:16px;}
+
+
+
+/* fragrance */
+#fragrance{position: relative; min-height: 100vh; max-width: 1920px; min-width: 1200px; margin: 0 auto;}
+#fragrance .fragrance_text{display: inline-block; width:50%;}
+#fragrance .visual{background: url("../img/visual02.jpg") no-repeat right/contain; width:50%; position: absolute; top:0; right:0; min-height: 100vh; height:100%;
+background-attachment: fixed;}
+#fragrance .type-right{background: url("../img/figure02.jpg") no-repeat; position: relative;}
+#fragrance .type-left{background: url("../img/figure01.jpg") no-repeat; background-position: right 0;}
+#fragrance .products{margin-right:58px; width:588px; padding-top:60px; margin: 0 auto;}
+#fragrance .content{width:486px; padding: calc(50% + 200px) 0; margin:0 auto}
+#fragrance .content h2{font-size: 40px; margin-bottom:16px;}
+
+
+
+/* skincare,fragrance common */
+.products .title{margin-bottom:16px; font-size: 32px;}
+.products_text{height:243px;}
+.products_text > a{display: block; margin-top:32px; cursor: pointer;}
+.type-right p{padding-left:340px}
+.type-left p{padding-right:340px}
+.skin_text{display: inline-block; width:50%; min-height:100vh; margin-left:50%;}
+.skin a{background: #f7f7f7;}
+.skin{width:384px; margin-top: 40px; padding-bottom: 120px;}
+.skin_right{ margin-left: 204px;}
+
+
+
+/* sns */
+#sns{position: relative; text-align: center; max-width: 1200px; padding:120px; margin:0 auto ;}
+#sns h2{font-size: 40px; font-weight: 300;}
+#sns p {padding: 16px 0 54px;}
+#sns  p .logo{display: inline-block; width:33px; height:33px; background: url("../img/icons.png") no-repeat center/cover; 
+  background-position: -120px 0; background-size: 400px auto; vertical-align: middle; margin-right:7px;}
+
+/* footer */
+#footer{background: #F9F9F9; padding: 60px 0 40px; color:#777777}
+#footer .container{max-width: 1024px; margin: 0 auto;}
+#footer .logo a{display:inline-block; width:160px; height:46px; background:url("../img/foot_logo.png") no-repeat center/cover;}
+#footer .link li{display: inline-block; margin-right:30px; padding:20px 0;}
+#footer address{margin: 20px 0 40px;}
+#footer address p span{margin-right: 20px;}

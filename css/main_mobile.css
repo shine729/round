@@ -1,0 +1,163 @@
+@charset 'utf-8';
+/* CSS Document */
+
+/* reset (pc) */
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, table {margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: 700;}
+main {display: block;}
+a {color: inherit; text-decoration: inherit;}
+a img {border: none;}
+img {vertical-align: middle; width: 100%;}
+li {list-style: none;}
+address, em, i, cite {font-style: normal;}
+table {border-collapse: collapse;}
+table caption {overflow: hidden; width: 0; height: 0;}
+i.fas, i.far, i.fab {vertical-align: middle; display: inline-block;}
+i.fas span, i.far span, i.fab span {position: absolute; overflow: hidden; text-indent: -999px;}
+.mobile {display: none !important;}
+.hidden {position: absolute; left: -9999px;}
+br.only-m {content: '';}
+br.only-m:after {content: '\00a0';}
+
+
+
+/* common */
+.blind{display: none;}
+img{width:100%;}
+.clearfix::before,.clearfix::after{display: block; clear: both; content:"";}
+.container{max-width:1200px; margin:0 auto;}
+
+
+/* daylife */
+.text{ width:100%; box-sizing: border-box; margin:0 auto;}
+.text .logo{background: url("../img/logo.png") no-repeat center/contain; width:300px; height:90px;}
+.visual{ width:100%; height:100vh; background: url("../img/visual01.jpg") no-repeat center/cover; 
+  box-sizing: border-box; background-attachment: fixed; background-position: left;}
+#daylife .text{padding:50px;}
+
+
+
+/* story   */
+#story{background: url("../img/parallax_bg.jpg") no-repeat center/cover; height:750px; background-attachment: fixed; color:white; position: relative;}
+#story h2{ font-size: 52px; }
+#story .content{position: absolute; top:50%; left:0; transform: translate(0,-50%); width:100%; text-align: center;}
+#story p{margin-top:20px}
+#story button{width:180px; height:45px; background: transparent; color:white; margin-top:50px; border:2px solid white}
+
+
+/* moment */
+#moment h2{font-size: 40px; width:100%; text-align: center; padding-bottom:35px}
+#moment .box{width:800px; margin:0 auto;}
+#moment .box_left{width:100%; height:500px; overflow: hidden; }
+#moment .box_left div img{display:block; margin-bottom:10px;} 
+#moment .box_center{height:350px;}
+#moment .box_center div{float:left; width:350px; height:100%;}
+#moment .box_center p{float:left; width:450px; background:#76887F; height:100%; color:white; text-align: center; padding-top: 150px; box-sizing: border-box;} 
+#moment .box_right .cut{box-sizing: border-box;}
+#moment .box_right .cut div{float: left; width:266.6px;}
+#moment .box_right p{background:#76887F; height:250px; color: white; text-align: center;  padding-top: 110px; box-sizing: border-box;}
+
+
+/* skincare */
+#skincare{position: relative; min-height: 100vh; margin: auto; }
+#skincare .visual{background: url("../img/visual03.jpg") no-repeat left/contain; background-attachment: fixed; position: absolute; top:0; left:0;
+width:35%; min-height:100vh; height:100%; }
+#skincare .type-right{background: url("../img/figure04.jpg") no-repeat;}
+#skincare .products{margin-left:58px; width:588px; padding-top:60px; }
+#skincare .type-left{background: url("../img/figure03.jpg") no-repeat; background-position: right 0;}
+.skin > a{display:inline-block; width:180px; height:180px;}
+.content{width:486px; padding:200px 0px; margin:0 auto}
+.content h2{font-size: 40px; margin-bottom:16px;}
+
+
+
+/* fragrance */
+#fragrance{position: relative; min-height: 100vh; margin: 0 auto;}
+#fragrance .fragrance_text{display: inline-block; }
+#fragrance .visual{background: url("../img/visual02.jpg") no-repeat right/contain; width:35%; position: absolute; top:0; right:0; min-height: 100vh; height:100%;
+background-attachment: fixed;}
+#fragrance .type-right{background: url("../img/figure02.jpg") no-repeat; position: relative;}
+#fragrance .type-left{background: url("../img/figure01.jpg") no-repeat; background-position: right 0;}
+#fragrance .products{margin-right:58px; width:588px; padding-top:60px; margin: 0 auto;}
+
+
+
+/* skincare,fragrance common */
+.products .title{margin-bottom:16px; font-size: 32px;}
+.products_text{height:243px;}
+.products_text > a{display: block; margin-top:32px}
+.type-right p{padding-left:340px}
+.type-left p{padding-right:340px}
+.skin_text{display: inline-block; width:65%; min-height:100vh; margin-left:35%;}
+.skin a{background: #f7f7f7;}
+.skin{width:384px; margin-top: 40px; padding-bottom: 120px;}
+.skin_right{ margin-left: 204px;}
+
+
+
+/* sns */
+#sns{position: relative; text-align: center; max-width: 1200px; padding:120px; margin:0 auto ;}
+#sns h2{font-size: 40px; font-weight: 300;}
+#sns p {padding: 16px 0 54px;}
+#sns  p .logo{display: inline-block; width:33px; height:33px; background: url("../img/icons.png") no-repeat center/cover; 
+  background-position: -120px 0; background-size: 400px auto; vertical-align: middle; margin-right:7px;}
+
+
+/* footer */
+#footer{background: #F9F9F9; padding: 60px 0 40px; color:#777777}
+#footer .container{max-width: 1024px; margin: 0 auto;}
+#footer .logo a{display:inline-block; width:160px; height:46px; background:url("../img/foot_logo.png") no-repeat center/cover;}
+#footer .link li{display: inline-block; margin-right:30px; padding:20px 0;}
+#footer address{margin: 20px 0 40px;}
+#footer address p span{margin-right: 20px;}
+
+@media (max-width:1000px){
+  #skincare .visual{width:20%}
+  .skin_text{width:80%; margin-left:20%}
+  #fragrance .visual{width:20%}
+  .fragrance_text{width:80%; margin-right:20%}
+}
+
+@media (max-width:800px){
+  #fragrance{margin: 0 auto;  }
+  #fragrance .visual{width:0}
+  .fragrance_text{width:100%; margin-left:0}
+  #fragrance .products{margin:0 auto}
+  #skincare{margin: 0 auto;}
+  #skincare .visual{width:0}
+  .skin_text{width:100%; margin-left:0}
+  #skincare .products{margin:0 auto}
+  #moment .box{width:600px}
+  #moment .box_left{height:400px;} 
+  #moment .box_center{height:250px; }
+  #moment .box_center div{width:250px; overflow: hidden;}
+  #moment .box_center p{width:350px; padding-top: 120px; }
+  #moment .box_right .cut div{width:200px;}
+  #moment .box_right  p{height: 100px; height:200px; padding-top: 80px;}
+  #sns{padding:50px; box-sizing: border-box;}
+  #footer{padding:50px;}
+}
+
+@media (max-width:600px){
+  #moment .box{width:360px}
+  #moment .box_left{height:300px;} 
+  #moment .box_center{height:150px; }
+  #moment .box_center div{width:140px; overflow: hidden;}
+  #moment .box_center p{width:220px; padding-top: 50px; }
+  #moment .box_right .cut div{width:120px;}
+  #moment .box_right  p{height:150px; padding-top: 50px;}
+  .content{padding:90px 0;}
+  .products .title{padding-top:350px; }
+  .type-right p,.type-left p {padding-left: 100px;}
+  .type-left p {padding-right: 0;}
+  #sns{padding:0;}
+  #fragrance .products{width:100%}
+  #skincare .products{width:100%}
+  .skin_text{padding:20px; box-sizing: border-box;}
+  .fragrance_text{padding:20px; box-sizing: border-box;}
+  .skin{margin-top:0}
+  .skin_right {margin-left: 0;}
+  .skin {width:100%}
+  .skin a{width:163px;}
+}
