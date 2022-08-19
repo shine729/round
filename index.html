@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROUND A'ROUND</title>
-  <link href="css/main_pc.css" rel="stylesheet" media="screen and (min-width : 1201px)">
-  <link href="css/main_mobile.css" rel="stylesheet" media="screen and (max-width : 1201px)">
+  <link href="css/main_pc.css" rel="stylesheet" media="screen and (min-width : 992px)">
+  <link href="css/main_mobile.css" rel="stylesheet" media="screen and (max-width : 992px)">
   <link href="css/navigation.css" rel="stylesheet"> 
   <link href="css/slick.css" rel="stylesheet"> 
   <link href="css/slick-theme.css" rel="stylesheet"> 
@@ -215,11 +215,13 @@
     <div class="visual"></div>
   </section>
   <section id="story">
-    <div class="content">
-      <h2>The Life Cosmetic <br> ROUND A'ROUND</h2>
-      <p>라운드어라운드는 나를 둘러싼 일상에 기분 좋은 휴식을 선물하는<br>
-        NO.1 라이프 코스메틱 브랜드입니다.</p>
-      <button><a>Brand Story</a></button>
+    <div class="container">
+      <div class="content">
+        <h2>The Life Cosmetic <br> ROUND A'ROUND</h2>
+        <p>라운드어라운드는 나를 둘러싼 일상에 기분 좋은 휴식을 선물하는<br>
+          NO.1 라이프 코스메틱 브랜드입니다.</p>
+        <button><a>Brand Story</a></button>
+      </div>
     </div>
   </section>
   <section id="moment">
@@ -227,9 +229,16 @@
       <h2>RARA Moments</h2>
       <div class="box clearfix">
         <div class="box_left">
-          <div><img src="img/moment01.jpg" alt="세안제품"></div>
+          <div>
+            <img src="img/moment01.jpg" alt="세안제품">
+            <p class="mobile">
+              <a href="#">라운드어라운드와 <br>함께하는 모든 행복의 순간
+              <span>more</span>
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="box_center clearfix" >
+        <div class="box_center clearfix pc" >
           <div><img src="img/moment05.jpg" alt="세안제품"></div>
           <p>
             <a href="#">라운드어라운드와 <br>함께하는 모든 행복의 순간
@@ -249,7 +258,8 @@
     </div>
   </section>
   <section id="skincare">
-    <div class="visual"></div>
+    <div class="container">
+      <div class="visual"></div>
     <div class="skin_text">
       <div class="content">
         <h2>Skin Care</h2>
@@ -258,75 +268,88 @@
         <a href="#">More</a>
       </div>
 
-      <div class="products type-right">
-        <p class="title">Greentea<br>
-          Skin Care</p>
-        <p class="products_text">
-          피부를 위한<br>
-          ‘착한’ 스킨케어의 시작<br>
-          그린티 수분 진정<br>
-          스킨케어 라인
-          <a>More</a>
-        </p>
+      <div class="products product_1">
+        <div class="type-left"></div>
+        <div class="text_wrap">
+          <p class="title">Greentea<br>
+            Skin Care</p>
+          <p class="products_text">
+            피부를 위한<br>
+            ‘착한’ 스킨케어의 시작<br>
+            그린티 수분 진정<br>
+            스킨케어 라인
+            <a>More</a>
+          </p>
+        </div>
         <div class="skin skin_right"><a href="#"><img src="img/product3.png" alt="스킨제품"></a></div>
       </div>
 
-      <div class="products type-left">
-        <p class="title">Basic<br>
-          Skin Care</p>
-        <p class="products_text"> 
-          꼭 필요한 것만 담아<br>
-          매일이 더 편안한 피부<br>
-          베이직 스킨케어 라인
-          <a>More</a>
-        </p>
+      <div class="products product_2">
+        <div class="type-right"></div>
+        <div class="text_wrap">
+          <p class="title">Basic<br>
+            Skin Care</p>
+          <p class="products_text"> 
+            꼭 필요한 것만 담아<br>
+            매일이 더 편안한 피부<br>
+            베이직 스킨케어 라인
+            <a>More</a>
+          </p>
+        </div>
         <div class="skin">
           <a href="#"><img src="img/product7.png" alt="스킨제품"></a>
           <a href="#"><img src="img/product2.png" alt="스킨제품"></a>
         </div>
       </div>
-    </div>  
+    </div> 
+    </div> 
   </section>
   <section id="fragrance">
-    <div class="visual"></div>
+    <div class="container">
+      <div class="visual"></div>
     <div class="fragrance_text">
-      <div class="container">
         <div class="content">
           <h2>Fragrance</h2>
           <p>나와 나를 둘러싼 모든 시간과 공간을 더 가치있게<br>
             채워주는 라운드어라운드의 프래그런스</p>
           <a href="#">More</a>
         </div>
-        <div class="products type-right">
-          <p class="title">Home<br>
-            Fragrance</p>
-          <p class="products_text">은은하게 오랫동안 지속되는<br>
-            향기로 공간을 스타일링 하는<br>
-            홈 프래그런스
-          <a href="#">More</a> 
-          </p>
+        <div class="products product_1">
+          <div class="type-left"></div>
+          <div class="text_wrap">
+            <p class="title">Home<br>Fragrance</p>
+            <p class="products_text">은은하게 오랫동안 <br clas="mobile">지속되는<br class="pc">
+              향기로 <br class="mobile"> 공간을 스타일링하는<br>
+              홈 프래그런스
+            <a href="#">More</a> 
+            </p>
+          </div>
           <div class="skin skin_right">
             <a gref="#"><img src="img/product6.png" alt="홈 프래그런스 상품"></a>
             <a gref="#"><img src="img/product1.png" alt="홈 프래그런스 상품"></a>
           </div> 
         </div>
-        <div class="products type-left">
-          <p class="title">
-            Life<br>
-            Fragrance</p>
-          <p class="products_text">남들과는 다르게 나의 일상을<br>
-            특별하게 채우는 감성적인 향기
-          <a href="#">More</a>
-          </p>
+        <div class="products product_2">
+          <div class="type-right"></div>
+          <div class="text_wrap">
+            <p class="title">
+              Life<br>
+              Fragrance</p>
+            <p class="products_text">남들과는 다르게<br class="mobile"> 나의 일상을<br class="pc">
+              특별하게<br class="mobile"> 채우는 감성적인 향기
+            <a href="#">More</a>
+            </p>
+          </div>
           <div class="skin">
             <a gref="#"><img src="img/product5.png" alt="홈 프래그런스 상품"></a>
             <a gref="#"><img src="img/product4.png" alt="홈 프래그런스 상품"></a>
           </div> 
         </div>
-      </div>
+    </div>
     </div>
   </section>
   <section id="sns">
+  <div class="container">
     <h2># ROUND A’ROUND</h2>
     <p><a href="#"><span class="logo"></span>roundaround_official</a></p>
     <div class="slider">
@@ -336,6 +359,7 @@
       <div><a><img src="img/rr_3.jpg" alt="인스타그램 바로가기"></a></div>
       <div><a><img src="img/rr_5.jpg" alt="인스타그램 바로가기"></a></div>
     </div>
+  </div>
   </section>
   <footer id="footer">
     <div class="container">

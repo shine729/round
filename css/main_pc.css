@@ -63,9 +63,13 @@ margin-top: -100px;}
 #skincare{position: relative; min-height: 100vh; margin: auto; max-width: 1920px; min-width: 1200px;}
 #skincare .visual{background: url("../img/visual03.jpg") no-repeat left/contain; background-attachment: fixed; position: absolute; top:0; left:0;
 width:50%; min-height:100vh; height:100%; }
-#skincare .type-right{background: url("../img/figure04.jpg") no-repeat;}
-#skincare .products{margin-left:58px; width:588px; padding-top:60px; }
-#skincare .type-left{background: url("../img/figure03.jpg") no-repeat; background-position: right 0;}
+#skincare .type-left{background: url("../img/figure04.jpg") no-repeat;clear: both; width:306px; height: 408px;
+  background-size: 306px 408px; float:left;}
+#skincare .type-right{background: url("../img/figure03.jpg") no-repeat; width:306px; height: 408px;
+  background-size: 306px 408px;  background-position: right 0; float:right;}
+#skincare .products{margin-left:58px; width:550px; padding-top:60px; float:left;}
+#skincare .products .text_wrap{float:right;}
+#skincare .products.product_2 .text_wrap{float:left;}
 .skin > a{display:inline-block; width:180px; height:180px;}
 #skincare .content{width:486px; padding: calc(50% + 200px) 0; margin:0 auto}
 #skincare .content h2{font-size: 40px; margin-bottom:16px;}
@@ -77,11 +81,14 @@ width:50%; min-height:100vh; height:100%; }
 #fragrance .fragrance_text{display: inline-block; width:50%;}
 #fragrance .visual{background: url("../img/visual02.jpg") no-repeat right/contain; width:50%; position: absolute; top:0; right:0; min-height: 100vh; height:100%;
 background-attachment: fixed;}
-#fragrance .type-right{background: url("../img/figure02.jpg") no-repeat; position: relative;}
-#fragrance .type-left{background: url("../img/figure01.jpg") no-repeat; background-position: right 0;}
-#fragrance .products{margin-right:58px; width:588px; padding-top:60px; margin: 0 auto;}
+#fragrance .type-right{background: url("../img/figure02.jpg") no-repeat; position: relative;  width:306px; height: 408px;
+  background-size: 306px 408px; float: right;}
+#fragrance .type-left{background: url("../img/figure01.jpg") no-repeat; background-position: right 0;  width:306px; height: 408px;
+  background-size: 306px 408px; float:left;}
+#fragrance .products{margin-right:58px; width:550px; padding-top:60px; margin: 0 auto; clear: both;}
 #fragrance .content{width:486px; padding: calc(50% + 200px) 0; margin:0 auto}
 #fragrance .content h2{font-size: 40px; margin-bottom:16px;}
+.product_1 .text_wrap{float: right;}
 
 
 
@@ -93,7 +100,7 @@ background-attachment: fixed;}
 .type-left p{padding-right:340px}
 .skin_text{display: inline-block; width:50%; min-height:100vh; margin-left:50%;}
 .skin a{background: #f7f7f7;}
-.skin{width:384px; margin-top: 40px; padding-bottom: 120px;}
+.skin{width:384px; margin-top: 40px; padding-bottom: 120px; float:left;}
 .skin_right{ margin-left: 204px;}
 
 
@@ -112,3 +119,4 @@ background-attachment: fixed;}
 #footer .link li{display: inline-block; margin-right:30px; padding:20px 0;}
 #footer address{margin: 20px 0 40px;}
 #footer address p span{margin-right: 20px;}
+
