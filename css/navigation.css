@@ -32,3 +32,16 @@ transform: translatey(3px) rotate(-45deg); width: 20px;}
 .menubar span:nth-child(4).active{opacity: 0;}
 .bg_black{height:100vh; width:100%; background:#000; opacity: 0.7; display: none; position: fixed; top: 0; left: 0; z-index: 1;}
 .bg_black.active{ display: block;}
+
+@media (max-width:992px){
+  #header{height: 40px; padding: 0; position: fixed; background: #fff; top:0; left:0; z-index: 10;}
+  .submenu.on{display: none;}
+  .menubar span{left: 50%; transform: translateX(-50%);}
+  .menubar span.active{left: 10px;}
+  .menubar span:nth-of-type(1){top:14px;}
+  .menubar span:nth-of-type(2){top:19px;}
+  .menubar span:nth-of-type(3){top:19px;}
+  .menubar span:nth-of-type(4){top:24px;}
+  .menubar{width:40px; height: 40px;}
+  #menu ul { padding: 100px 30px 40px;}
+}

@@ -34,12 +34,13 @@ img{width:100%;}
 .text{ width:100%; box-sizing: border-box; margin:0 auto;}
 .text .logo{background: url("../img/logo.png") no-repeat center/contain; width:auto;}
 .visual{display: none;}
-#daylife .text{padding:50px;}
+#daylife .text{padding:50px; display: none;}
 
 
 
 /* story   */
-#story{background: url("../img/parallax_bg.jpg") no-repeat center/cover; height:380px; background-attachment: fixed; color:white; position: relative;}
+#story{background: url("../img/parallax_bg.jpg") no-repeat center/cover; height:380px; background-attachment: initial; color:white; 
+  position: relative; margin-top:40px;}
 #story .container{position: relative; height: 380px;}
 #story h2{ font-size: 30px; }
 #story .content{position: relative; top:50%; left:0; transform: translate(0,-50%); width:100%; height: auto; text-align: center;
@@ -49,7 +50,7 @@ img{width:100%;}
 
 
 /* moment */
-#moment h2{font-size: 40px; width:100%; text-align: center; padding:35px 0;}
+#moment h2{font-size: 40px; width:100%; text-align: center; padding:20px 0;}
 #moment .box{margin:0 auto;}
 #moment .box_left{width:100%; overflow: hidden; position: relative;}
 #moment .box_left>div>p::before{content:''; display:block; position:absolute; width:193px; height: 65px; background: #000; padding: 10px 20px;
@@ -102,7 +103,7 @@ background-attachment: fixed;}
 .products .text_wrap .title br{display: none;}
 .products.product_2 .text_wrap{left:0;}
 .products .title{margin-bottom:16px; font-size: 5vw; font-weight: bold;}
-.products_text > a{display: block; margin-top:5px}
+.products_text > a{display: block; margin-top:5px; font-size: 13px; font-weight: bold;}
 .type-left p{float:left;}
 .products .skin_text{display: inline-block; width:100%; min-height:100vh; margin-left:0;}
 .products .skin>a{background: #f7f7f7; float:left;}
