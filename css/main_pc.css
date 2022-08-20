@@ -120,3 +120,15 @@ background-attachment: fixed;}
 #footer address{margin: 20px 0 40px;}
 #footer address p span{margin-right: 20px;}
 
+@media (max-width:1360px){
+  #skincare,#fragrance{min-width: auto;}
+  #skincare .visual,#fragrance .visual{display: none;}
+  #skincare .content,#fragrance .content{width: 700px; padding: 100px 0; margin: 0 auto;}
+  #skincare .products,#fragrance .products{width: 700px; float: none; margin: 0 auto;}
+  .skin_text,#fragrance .fragrance_text{width:100%; margin-left:0;}
+  #moment{min-width:auto; }
+  #moment .box{ width: 612px; margin: 0 auto;}
+  #moment .box_left{display: none;}
+  #footer{padding: 60px 20px 40px;}
+}
+
