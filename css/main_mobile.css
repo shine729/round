@@ -100,7 +100,6 @@ background-attachment: fixed;}
 /* skincare,fragrance common */
 .products{position: relative; width: 100%; float:left;}
 .products .text_wrap{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
-.products .text_wrap .title br{display: none;}
 .products.product_2 .text_wrap{left:0;}
 .products .title{margin-bottom:16px; font-size: 5vw; font-weight: bold;}
 .products_text > a{display: block; margin-top:5px; font-size: 13px; font-weight: bold;}
